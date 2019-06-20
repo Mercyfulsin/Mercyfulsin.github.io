@@ -23,6 +23,7 @@ font-weight: bold;
 header{
     height: 50px;
     width: 100%;
+    border-width: 100%;
     border-bottom-style: solid;
     border-bottom-width: 3px;
     border-color: #cccccc;
@@ -92,8 +93,8 @@ input[type=submit]:hover{
 .Middle{
     position: relative;
     width: 100vw;
-    height: 556px;
-    overflow: auto;
+    height: 100vh;
+    /* overflow: auto; */
     background-image: url("../images/background.png");
     background-position: center center;
     background-size: cover;
@@ -106,8 +107,9 @@ input[type=submit]:hover{
     width: 960px;
     background: #ffffff;
     margin-top: 4%;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%,0);
     margin-bottom: 8%;
     border-block-color: #dddddd;    
 }
@@ -126,24 +128,29 @@ input[type=submit]:hover{
 }
 .image-box{
     position: relative;
+    float: left;
+    padding: 20px;
     width: 200px;
     height: 200px;
 }
 .project-image{
-    position: absolute;
     width: inherit;
     height: inherit;
     /* margin: 20px; */
 }
-.project-title{
+.image-box p{
     position: absolute;
+    bottom:0;
+    margin-bottom: 30px;
+    padding: 0;
+    padding-top: 5px;
     text-align: center;
-    width: 100%;
+    height: 30px;
+    width: 200px;
+    box-sizing: border-box;
     background-color: #666666;
-    height: 1px;
+    color: #ffff;
 }
-/* .project-title{} */
-
 
 
 footer {
