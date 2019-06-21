@@ -4,7 +4,12 @@
     color: #777777;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
+html{
+    width: 100%;
+    height: 100%;
+}
 body{
+    width: inherit;
     display: block;
     font-size: 16px;
 }
@@ -22,7 +27,7 @@ font-weight: bold;
 }
 header{
     height: 50px;
-    width: 100%;
+    width: inherit;
     border-width: 100%;
     border-bottom-style: solid;
     border-bottom-width: 3px;
@@ -43,16 +48,30 @@ header{
     font-family: 'Georgia', Times, Times New Roman, serif;
     background: #666666;
 }
-.nav li, a{
+.nav li{
     font-family: 'Georgia', Times, Times New Roman, serif;
     display: block;
     float: right;
-    margin-top: 8px;
+    text-align: center;
     width: 100px;
-    text-decoration: none;
     list-style: none;
+    padding-top: 17px;
+    background-color: lightgray;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
-
+.nav a{
+    color: white;
+    text-decoration: none;
+}
+.nav li:hover{
+    background-color: darkgray;
+}
+.nav li:active{
+    background-color: #666666;
+}
 #Profile{
     float:left;
     padding: 20px;
@@ -92,7 +111,6 @@ input[type=submit]:hover{
 }
 .Middle{
     position: relative;
-    width: 100vw;
     height: 100vh;
     /* overflow: auto; */
     background-image: url("../images/background.png");
