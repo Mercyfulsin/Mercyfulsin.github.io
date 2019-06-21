@@ -133,10 +133,8 @@ input[type=submit]:hover{
     width: 200px;
     height: 200px;
 }
-.project-image{
-    width: inherit;
-    height: inherit;
-    /* margin: 20px; */
+.image-box a{
+    margin:0;
 }
 .image-box p{
     position: absolute;
@@ -152,6 +150,11 @@ input[type=submit]:hover{
     color: #ffff;
 }
 
+.project-image{
+    width: 200px;
+    height: 200px;
+    /* margin: 20px; */
+}
 
 footer {
     position: fixed;
