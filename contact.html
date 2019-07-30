@@ -1,48 +1,98 @@
 <!DOCTYPE html>
-<html>
+<HTML>
 
-<head>
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<HEAD>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</HEAD>
 
-    <title>Contact</title>
-</head>
-
-<body>
-
-    <header>
-        <div class="header">
-            <p id="name">Andres Ruiz-Velediaz</p>
-            <ul class="nav">
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="index.html">About</a></li>
+<BODY>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Mercyfulsin</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html ">Portfolio</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">Contact Me<span class="sr-only">(current)</span></a>
+                </li>
             </ul>
+            <span class="navbar-text">
+                "酔生夢死"
+            </span>
         </div>
-    </header>
+    </nav>
 
-
-    <div class="Middle">
-        <div class="Container">
-            <h1>Contact Me</h1>
-            <div class="line-divider"></div>
-            <div class="input-combo">Name<br>
-                <input type="text" name="Name" value="John Smith"><br>
-            </div>
-            <div class="input-combo">Email<br>
-                <input type="text" name="Email" value="example@gmail.com"><br>
-            </div>
-            <div class="input-combo">Message<br>
-                <textarea></textarea><br>
-            </div>
-            <input type="submit" name="Submit" value="Submit">
+    <div class="container mt-2 mt-sm-5">
+        <!-- Email CARD -->
+        <div class="row justify-content-md-center">
+            <div class="card text-white bg-dark col-sm-6 mb-5">
+                <div class="card-header">Shoot me an Email!</div>
+                <div class="card-body">
+                  <h5 class="card-title">Please don't spam me</h5>
+                  <div class="line-divider"></div>
+                  <div class="input-combo">Name<br>
+                      <input type="text" class="form-control" name="Name" value="John Smith"><br>
+                  </div>
+                  <div class="input-combo">Email<br>
+                      <input type="email" class="form-control" name="Email" value="example@gmail.com"><br>
+                  </div>
+                  <div class="input-combo">Message<br>
+                      <textarea class="form-control"></textarea><br>
+                  </div>
+                </div>
+              </div>
         </div>
     </div>
 
 
-    <footer>
-        <P id="footer">Copyright &copy; 2019</P>
-    </footer>
-</body>
 
-</html>
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 ">
+                <ul class="list-unstyled list-inline social text-center">
+                    <li class="list-inline-item"><a href="https://www.facebook.com/mercyfulsin" target="_blank"><i
+                                class="fa fa-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="https://twitter.com/mercyfulsin" target="_blank"><i
+                                class="fa fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.instagram.com/mercyfulsin/" target="_blank"><i
+                                class="fa fa-instagram"></i></a></li>
+                    <!-- <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li> -->
+                    <li class="list-inline-item"><a href="mailto:mercyfulsin@dispostable.com" target="_blank"><i
+                                class="fa fa-envelope"></i></a></li>
+                </ul>
+            </div>
+            </hr>
+        </div>
+    </footer>
+
+
+    <!-- JS Scripts for Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</BODY>
+
+</HTML>
